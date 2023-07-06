@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.20">
-<title>XML element order</title>
+<title>UK-GEMINI Introduction</title>
 <style>
 @import "./assets/asciidoctor.css"
 
@@ -644,567 +644,108 @@ Login</span>
 
 
 <div id="header">
-<h1>XML element order</h1>
+<h1>UK-GEMINI Introduction</h1>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="_dataset_and_dataset_series_metadata"><a class="anchor" href="#_dataset_and_dataset_series_metadata"></a><a class="link" href="#_dataset_and_dataset_series_metadata">Dataset and Dataset Series Metadata</a></h2>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Return
-to&#160;<a href="1037-uk-gemini-standard-and-inspire-implementing-rules.html">GEMINI
-2.3 home page</a></p>
+<p>This page describes the requirements and guidance for metadata
+conforming to the UK standard known as UK GEMINI. There are several
+entry points to the guidance:</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ISO 19139 XML Element</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>GEMINI2 Item Number</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>GEMINI2 Item Name</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>gmd:MD_Metadata</em></strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:fileIdentifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">45</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">File Identifier</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:language</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">33</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Metadata language</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:parentIdentifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">49</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Parent identifier</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:hierarchyLevel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">39</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Resource type</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:hierarchyLevelName</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">47</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hierarchy level name</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:contact</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">35</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Metadata point of contact</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:dateStamp</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Metadata date</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:referenceSystemInfo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">17</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Spatial reference system</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:identificationInfo</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>gmd:MD_DataIdentification</em></strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>  gmd:citation</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>    gmd:CI_Citation</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:title</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Title</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:alternateTitle</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alternative title</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dataset reference date</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">36</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Unique resource identifier</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:abstract</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Abstract</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:pointOfContact</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">23</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Responsible organisation</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:resourceMaintenance</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Frequency of update</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:descriptiveKeywords</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Keyword</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  <em>gmd:resourceConstraints</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">   <em>gmd:MD_LegalConstraints</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">     <em>gmd:accessConstraints</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:otherConstraints</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Limitations on public access</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  <em>gmd:resourceConstraints</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">   <em>gmd:MD_Constraints</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:useLimitation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">26</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use constraints</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> gmd:spatialRepresentationType</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Spatial representation type</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> <em> gmd:spatialResolution</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">   <em> gmd:MD_Resolution</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:distance</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Spatial resolution</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  <em>gmd:spatialResolution</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>    gmd:MD_Resolution</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:equivalentScale</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">43</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent scale</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:language</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dataset language</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:characterSet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">51</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Character encoding</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:topicCategory</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Topic category</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>  gmd:extent</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">   <em>gmd:EX_Extent</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">     <em>gmd:geographicElement</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">        gmd:EX_GeographicDescription</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Extent</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>      </em>  gmd:EX_GeographicBoundingBox</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">44</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bounding box</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:temporalElement</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Temporal extent</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:verticalElement</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Vertical extent information</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:supplementalInformation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Additional information source</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>gmd:distributionInfo</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:distributionFormat</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">21</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Data format</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:transferOptions</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">19</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Resource locator</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>gmd:dataQualityInfo</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:scope</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Quality scope</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  <em>gmd:report</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">   gmd:DQ_DomainConsistency</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">41</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Conformity</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:lineage</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lineage</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>gmd:dataQualityInfo</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>  gmd:report</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">   gmd:DQ__XXXXXX_</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">52</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Data quality</p></td>
-</tr>
-</tbody>
-</table>
+<ul><li><span class="primary"><a href="1062-gemini-datasets-and-data-series">GEMINI
+for datasets and series</a></span></li><li><span class="primary"><a href="1063-gemini-services">GEMINI for
+services</a></span></li><li><span class="primary">Other material</span><ul><li><span class="primary"><a href="1052-metadata-guidelines-for-geospatial-data-resources-part-1.html">General
+introduction to metadata for geographic information</a></span></li><li><span class="primary"><a href="1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html">General
+introduction to GEMINI</a></span></li><li><span class="primary"><a href="1049-metadata-guidelines-for-geospatial-data-resources-part-2.html">General
+guidance for GEMINI</a></span></li><li><span class="primary"><a href="048-uk-gemini-encoding-guidance.html">General
+guidance on the XML encoding of GEMINI</a></span></li><li><span class="primary"><a href="https://github.com/AGIGemini/Schematron">Schematron rules for
+validating GEMINI records (GitHub link)</a></span></li><li><span class="primary"><a href="40-gemini/1056-glossary.html">Glossary of terms</a></span></li><li><span class="primary"><a href="1047-metadata-guidelines-for-geospatial-data-resources-part-3.html">List
+of references</a></span></li><li><span class="primary"><a href="053-common-metadata-errors-uk-location-discovery-metadata-service.html">Common
+errors</a></span></li></ul></li></ul>
+<div class="paragraph">
+<p>Conformance to GEMINI should ensure conformance to the INSPIRE
+Implementing Rules. UK specific guidance is provided. If you&#8217;re
+thinking, why GEMINI? Why not just use the INSPIRE Metadata guidance or
+the ISO standards?&#160;<a href="https://www.agi.org.uk/why-uk-gemini/">Click here for
+some
+reasons.</a>&#160;The&#160;<a href="https://www.gov.uk/government/publications/recommended-open-standards-for-government/using-metadata-to-describe-data-shared-within-government">UK
+Government Digital Service recommends using GEMINI when describing
+geographic data</a>&#160;and it is the preferred way to catalogue geographic
+data and services at Data.gov.uk.</p>
+</div>
+<div class="paragraph">
+<p>Both UK GEMINI and the INSPIRE Technical Guidance have been developed
+from the International
+Standard&#160;<a href="http://www.iso.org/iso/catalogue_detail?csnumber=26020">ISO
+19115:2003</a>&#160;Geographic information - Metadata, with supplementary
+material from ISO 19119:2005 Geographic information - Services. The XML
+encoding follows ISO 19139:2007 Geographic information - Metadata - XML
+encoding. This means that a GEMINI record is widely understood by
+geospatial software and users internationally.</p>
+</div>
+<div class="paragraph">
+<p>Note that GEMINI (and the INSPIRE Guidance) are about metadata for
+datasets, series, and services (collectively, 'resources'); not
+everything in a GEMINI record can be assumed to be true individually for
+each feature instance in the resource. The underlying ISO standards
+(19115, 19139) do allow for metadata at the instance level, so the
+elements could be used to describe metadata for that, but the guidance
+here may not be appropriate and the resulting record could not be
+validated as a GEMINI (or INSPIRE) record.</p>
+</div>
+<div class="paragraph">
+<p>Here is
+a&#160;<a href="055-uk-gemini-major-changes-since-1-0.html">summary
+of changes</a>&#160;from earlier versions.</p>
+</div>
+<div class="paragraph">
+<p>Here is
+a&#160;<a href="1250-element-summary.html/">summary</a>&#160;of
+the GEMINI elements (similar to Table 1 and Table 2 in GEMINI 2.2).</p>
+</div>
+<div class="paragraph">
+<p>Note: in GEMINI 2.3, the GEMINI Element number is called "GEMINI id";
+the actual numbers have not changed, where the same element was in
+GEMINI 2.2.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_service_metadata"><a class="anchor" href="#_service_metadata"></a><a class="link" href="#_service_metadata">Service Metadata</a></h2>
+<h2 id="_software_that_implements_gemini_2_3"><a class="anchor" href="#_software_that_implements_gemini_2_3"></a><a class="link" href="#_software_that_implements_gemini_2_3">Software that implements GEMINI 2.3</a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ISO 19139 XML Element</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>GEMINI2 Item Number</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>GEMINI2 Item Name</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>gmd:MD_Metadata</em></strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:fileIdentifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">45</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">File Identifier</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:language</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">33</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Metadata language</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:parentIdentifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">49</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Parent identifier</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:hierarchyLevel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">39</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Resource type</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:hierarchyLevelName</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">47</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hierarchy level name</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:contact</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">35</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Metadata point of contact</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:dateStamp</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Metadata date</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:referenceSystemInfo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">17</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Spatial reference system</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:identificationInfo</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>srv:SV_Identification</em></strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>  gmd:citation</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>    gmd:CI_Citation</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:title</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Title</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:alternateTitle</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alternative title</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dataset reference date</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:abstract</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Abstract</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:pointOfContact</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">23</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Responsible organisation</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:resourceMaintenance</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:descriptiveKeywords</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Keyword</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  <em>gmd:resourceConstraints</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">   <em>gmd:MD_LegalConstraints</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">     <em>gmd:accessConstraints</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:otherConstraints</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Limitations on public access</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  <em>gmd:resourceConstraints</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">   <em>gmd:MD_Constraints</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:useLimitation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">26</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use constraints</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  srv:serviceType</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">37</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Spatial data service type</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em> srv:extent</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">   <em>gmd:EX_Extent</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">     <em>gmd:geographicElement</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">        gmd:EX_GeographicDescription</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Extent</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>      </em>  gmd:EX_GeographicBoundingBox</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">44</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(the bounding coordinates)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:temporalElement</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Temporal extent</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">      gmd:verticalElement</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Vertical extent information</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">    srv:couplingType</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">    srv:containsOperations</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">    srv:operatesOn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">38</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Coupled resource</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>gmd:distributionInfo</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:distributionFormat</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:transferOptions</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">19</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Resource locator</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>gmd:dataQualityInfo</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  gmd:scope</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Quality scope (including levelDescription)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">  <em>gmd:report</em></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">   gmd:DQ_DomainConsistency</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">41</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Conformity</p></td>
-</tr>
-</tbody>
-</table>
 <div class="paragraph">
-<p><em>Last updated: April 2018</em></p>
+<p>Several software implementations exist and are in use across the UK:</p>
+</div>
+<ul><li><span class="primary"><a href="https://locationmde.data.gov.uk/">UK Location Metadata Editor</a>: online
+editor owned by the Defra INSPIRE team</span></li><li><span class="primary"><a href="https://geonetwork-opensource.org/">GeoNetwork Open
+Source</a>&#160;-&#160;<a href="https://github.com/AstunTechnology/iso19139.gemini23">GEMINI
+plugin</a>: server software in use in several government departments</span></li><li><span class="primary"><a href="https://www.medin.org.uk/data/submit-metadata">MEDIN metadata editors</a>:
+online and downloadable client editors for the MEDIN community profile</span></li></ul>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_feedback"><a class="anchor" href="#_feedback"></a><a class="link" href="#_feedback">Feedback</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We realise that various aspects of the website could be improved and
+that there may be some errors and inconsistencies in the content,
+therefore we would like to hear from you if you spot any of these or you
+would like to see improvements in terms of presentation and usability.</p>
+</div>
+<div class="paragraph">
+<p>Please send any comments
+to&#160;<a href="mailto:gemini@agi.org.uk?subject=GEMINI2.3%20feedback">gemini@agi.org.uk</a></p>
+</div>
+<div class="paragraph">
+<p><em>Last updated: June 2021</em></p>
+</div>
+<div class="paragraph">
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><span class="image"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Licence"></span></a><br>
+This work is licensed under
+a&#160;<a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+Attribution 4.0 International License</a></p>
 </div>
 </div>
 </div>
