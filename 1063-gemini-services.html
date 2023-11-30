@@ -7195,12 +7195,12 @@ operatesOn element now contains an MD_DataIdentification element.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Statement of conformity with the product specification or
-user requirement against which the data is being evaluated</p></td>
+user requirement</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this is to record the conformity to
-the INSPIRE or other data specification</p></td>
+INSPIRE and any other data specification</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
@@ -7304,30 +7304,22 @@ Guidelines, publication, 2010-04-26</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>At least one conformity statement shall be to an INSPIRE
-specification, even if simply to say that the data set is not conformant
-or not tested</p>
+<p>For Gemini compliance, you must provide a conformity statement referring to the INSPIRE specifications, even if the dataset is not conformant, or you didn&#8217;t test it.</p>
 </li>
 <li>
-<p>Other conformity statements may be added, citing INSPIRE technical
-guidance or other specifications</p>
+<p>Datasets, dataset series and metadata about invocable spatial data services shall declare conformity to [INSPIRE Regulation 1089/2010] and shall use the title and citation date in the example and encoding guidelines below.</p>
+</li>
+<li>
+<p>Metadata about network services shall declare conformity to [INSPIRE Regulation 976/2009].</p>
+</li>
+<li>
+<p>Other conformity statements may be added, where each conformity statement shall relate to only one specification.</p>
 </li>
 <li>
 <p>Each conformity statement shall relate to only one specification</p>
 </li>
 <li>
-<p>Assess the conformity of the data resource against its product
-specification or the INSPIRE thematic data specification.</p>
-</li>
-<li>
-<p>State the data specification to which the degree of conformity applied
-and optionally an 'Explanation', for example to reference the
-conformance criteria in the specification against which conformance is
-being claimed.</p>
-</li>
-<li>
-<p>For INSPIRE, Datasets and dataset series shall declare conformity to
-[Regulation 1089/2010].</p>
+<p>Each conformity statement shall state the specification that it is about, the degree of conformity (true or false) and optionally an 'Explanation', for example to reference the conformance criteria in the specification against which conformance is being claimed.</p>
 </li>
 </ol>
 </div></div></td>
@@ -7336,13 +7328,6 @@ being claimed.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
 <ol class="arabic">
-<li>
-<p>The specification is identified in the element Specification.</p>
-</li>
-<li>
-<p>The conformance of a data resource may be considered with respect to
-more than one specification.</p>
-</li>
 <li>
 <p>For INSPIRE, the citation title shall be the official title of the
 INSPIRE Implementing Rule, specification document or Conformance Class</p>
@@ -7355,6 +7340,9 @@ INSPIRE Implementing Rule, specification document or Conformance Class</p>
 <p>For INSPIRE Implementing Rule documents, the value of the title
 element shall match exactly the official title of the cited document in
 the language of the metadata.</p>
+</li>
+<li>
+<p>If conformity with INSPIRE has not been evaluated, the degree (gmd:pass) element shall be empty and contain a nil reason attribute with value "unknown"</p>
 </li>
 </ol>
 </div></div></td>
@@ -7370,7 +7358,7 @@ and would give a publication date of 2010-12-08</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">April 2020</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">November 2023</p></td>
 </tr>
 </tbody>
 </table>
@@ -7415,7 +7403,7 @@ DQ_ConformanceResult</p></td>
 <summary class="title">Change history&#8230;&#8203;</summary>
 <div class="content">
 <ul><li><span class="primary">GEMINI 1 to 2.0: New element</span></li><li><span class="primary">GEMINI 2.2 to 2.3: changed the way to encode that a resource has not
-been tested against the relevant INSPIRE specification</span></li></ul>
+been tested against the relevant INSPIRE specification</span></li><li><span class="primary">November 2023 clarified guidance and comments</span></li></ul>
 </div>
 </details>
 <details>
@@ -8194,7 +8182,7 @@ provided for any record that is not describing a dataset.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-11-30 17:14:58 UTC
+Last updated 2023-11-30 17:22:58 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">
