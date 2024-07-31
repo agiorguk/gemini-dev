@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.21">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <title>UK GEMINI 2.3 2020-04-07 service</title>
 <style>
 @import "./assets/asciidoctor.css"
@@ -81,6 +81,7 @@ pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
 pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
 pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
 pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
 pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
 pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
 pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
@@ -2623,8 +2624,7 @@ alternative titles by which the data resource is known.</p></td>
 <p>Should be provided when the data resource has more than one title.</p>
 </li>
 <li>
-<p>There is no need to fill in this entry unless there are other names
-used for the dataset, for example historic names.</p>
+<p>There is no need to fill in this entry unless there are other names in use.</p>
 </li>
 <li>
 <p>Commonly used abbreviations or acronyms should be recorded. If the
@@ -6570,10 +6570,6 @@ license restrictions, as they have their own term in the ISO 19115 code
 list.</p>
 </li>
 <li>
-<p>If there are no limitations the value of gmd:otherConstraints shall be
-'no limitations' (see Example Three).</p>
-</li>
-<li>
 <p>There may be more than one gmd:otherConstraints element</p>
 </li>
 </ol>
@@ -7199,7 +7195,7 @@ user requirement</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this is to record the conformity to
-INSPIRE and any other data specification</p></td>
+INSPIRE and any other specification</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
@@ -7241,7 +7237,7 @@ INSPIRE and any other data specification</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Citation of the product specification or user requirement
-against which data resource is evaluated</p></td>
+against which the resource is evaluated</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">degree of conformity with the
 specification</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">meaning of conformance for this result</p></td>
@@ -7251,7 +7247,7 @@ specification</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to identify the specification
 against which conformity is evaluated</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to
-identify the conformity of the data resource to the cited specification</p></td>
+identify the conformity of the resource to the cited specification</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to explain the meaning of conformity in
 this context</p></td>
 </tr>
@@ -7282,11 +7278,11 @@ false if not conformant</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Rules</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cite the specification to which the data resource should conform</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The data resource should be evaluated against the specification and the
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cite the specification to which the resource should conform</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The resource should be evaluated against the specification and the
 result recorded</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Include a statement about which aspects of the
-specification the data resource conforms and any exceptions</p></td>
+specification the resource conforms to, and any exceptions</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
@@ -7888,13 +7884,15 @@ Bounding box, which was made multiple</span></li></ul>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The encoding example for geographic bounding box for datasets is shown
-in the example</p>
+<p>The encoding is very similar to that used in metadata
+instances for datasets or series, except that the extent XML element is
+in the srv namespace instead of gmd. This is because extent is a
+property of MD_DataIdentification (ISO 19115) and
+SV_ServiceIdentification (ISO 19119/Amd 1:2008), not a property of the
+parent MD_Identification.</p>
 </li>
 <li>
-<p>Note that the extent XML element is in the gmd namespace. This differs
-from service metadata instances where the extent XML element will be in
-the srv namespace.</p>
+<p>Note that the EX_Extent XML element is in the gmd namespace, even though it is being used to describe a service.</p>
 </li>
 <li>
 <p>The definition of the equivalent ISO 19115 class,
@@ -7907,14 +7905,6 @@ decimal numbers) with axes orientated north and east. The geodetic datum
 is WGS 84.</p>
 </li>
 </ol>
-</div>
-<div class="paragraph">
-<p>Note that the encoding is very similar to that used in metadata
-instances for datasets or series, except that the extent XML element is
-in the srv namespace instead of gmd. This is because extent is a
-property of MD_DataIdentification (ISO 19115) and
-SV_ServiceIdentification (ISO 19119/Amd 1:2008), not a property of the
-parent MD_Identification.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -8181,7 +8171,7 @@ provided for any record that is not describing a dataset.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-03-11 09:24:21 UTC
+Last updated 2024-07-31 11:39:15 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">

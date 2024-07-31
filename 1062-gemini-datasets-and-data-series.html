@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.21">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <title>UK GEMINI 2.3 2020-04-07 dataset or series</title>
 <style>
 @import "./assets/asciidoctor.css"
@@ -81,6 +81,7 @@ pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
 pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
 pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
 pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
 pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
 pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
 pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
@@ -2649,8 +2650,7 @@ alternative titles by which the data resource is known.</p></td>
 <p>Should be provided when the data resource has more than one title.</p>
 </li>
 <li>
-<p>There is no need to fill in this entry unless there are other names
-used for the dataset, for example historic names.</p>
+<p>There is no need to fill in this entry unless there are other names in use.</p>
 </li>
 <li>
 <p>Commonly used abbreviations or acronyms should be recorded. If the
@@ -6188,8 +6188,50 @@ included, for best results with data.gov.uk:</p>
 point to one of the values of the ISO 19139 code list
 CI_OnLineFunctionCode)</span></li><li><span class="primary">name (this appears on the data.gov.uk site)</span></li><li><span class="primary">description (data.gov.uk uses this if no 'name' provided)</span></li></ul>
 </li>
+<li>
+<p>Guidance on selecting appropriate OnLineFunctionCode value for function sub-element.</p>
+</li>
 </ol>
-</div></div></td>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OnLineFunctionCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">download</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">online instructions for transferring data from one storage device or system to another</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WFS Direct URL to file</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">information</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">online information about the resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WMS Product page</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">offlineAccess</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">online instructions for requesting the resource from the provider</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">web page containing ordering information</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">order</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">online order process for obtaining the resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Product ordering page</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">search</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">online search interface for seeking out information about the resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">distributors web site search page</p></td>
+</tr>
+</tbody>
+</table></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
@@ -7538,10 +7580,6 @@ license restrictions, as they have their own term in the ISO 19115 code
 list.</p>
 </li>
 <li>
-<p>If there are no limitations the value of gmd:otherConstraints shall be
-'no limitations' (see Example Three).</p>
-</li>
-<li>
 <p>There may be more than one gmd:otherConstraints element</p>
 </li>
 </ol>
@@ -7906,7 +7944,7 @@ one or more codes are defined</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">conditional ~ must be suppled if the code by
+<td class="tableblock halign-left valign-top"><p class="tableblock">conditional ~ must be supplied if the code by
 itself does not uniquely identify the resource.</p></td>
 </tr>
 <tr>
@@ -7928,7 +7966,7 @@ itself does not uniquely identify the resource.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Other comments</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">This code space is often defined by some authority
-organization, were one organization may define multiple code spaces. The
+organization, where one organization may define multiple code spaces. The
 range and format of each code space identifier is defined by that code
 space authority.</p></td>
 </tr>
@@ -8186,7 +8224,7 @@ user requirement</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this is to record the conformity to
-INSPIRE and any other data specification</p></td>
+INSPIRE and any other specification</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
@@ -8228,7 +8266,7 @@ INSPIRE and any other data specification</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Citation of the product specification or user requirement
-against which data resource is evaluated</p></td>
+against which the resource is evaluated</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">degree of conformity with the
 specification</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">meaning of conformance for this result</p></td>
@@ -8238,7 +8276,7 @@ specification</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to identify the specification
 against which conformity is evaluated</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to
-identify the conformity of the data resource to the cited specification</p></td>
+identify the conformity of the resource to the cited specification</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to explain the meaning of conformity in
 this context</p></td>
 </tr>
@@ -8269,11 +8307,11 @@ false if not conformant</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Rules</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cite the specification to which the data resource should conform</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The data resource should be evaluated against the specification and the
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cite the specification to which the resource should conform</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The resource should be evaluated against the specification and the
 result recorded</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Include a statement about which aspects of the
-specification the data resource conforms and any exceptions</p></td>
+specification the resource conforms to, and any exceptions</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
@@ -8986,15 +9024,6 @@ Bounding box, which was made multiple</span></li></ul>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
 <ol class="arabic">
-<li>
-<p>The encoding example for geographic bounding box for datasets is shown
-in the example</p>
-</li>
-<li>
-<p>Note that the extent XML element is in the gmd namespace. This differs
-from service metadata instances where the extent XML element will be in
-the srv namespace.</p>
-</li>
 <li>
 <p>The definition of the equivalent ISO 19115 class,
 EX_GeographicBoundingBox, is 'Geographic area of the entire dataset
@@ -10725,7 +10754,7 @@ more than one resourceMaintenance</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-03-11 09:24:21 UTC
+Last updated 2024-07-31 11:39:15 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">
