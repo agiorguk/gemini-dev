@@ -3418,6 +3418,61 @@ controlled vocabulary</p>
 </div>
 </div></div></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example Five (services) - keywords in the srv namespace (this encoding is not to be used)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:descriptiveKeywords&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_Keywords&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>humanCatalogueViewer<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Keywords&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:descriptiveKeywords&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:descriptiveKeywords&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_Keywords&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>water<span class="tok-w"> </span>monitoring<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>water<span class="tok-w"> </span>quality<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:thesaurusName&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:title&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>GEMET<span class="tok-w"> </span>-<span class="tok-w"> </span>Concepts,<span class="tok-w"> </span>version<span class="tok-w"> </span>2.4<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:title&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:date&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:CI_Date&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:date&gt;</span>
+<span class="tok-w">                    </span><span class="tok-nt">&lt;gco:Date&gt;</span>2010-01-13<span class="tok-nt">&lt;/gco:Date&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:dateType&gt;</span>
+<span class="tok-w">                    </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span><span class="tok-w"> </span>
+<span class="tok-w">                      </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#CI_DateTypeCode&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">                      </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;publication&#39;</span><span class="tok-nt">&gt;</span>publication<span class="tok-nt">&lt;/gmd:CI_DateTypeCode&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:dateType&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;/gmd:CI_Date&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:thesaurusName&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Keywords&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:descriptiveKeywords&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
+</div>
+</div></div></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -8191,7 +8246,7 @@ This work is licensed under a&#160;<a href="http://creativecommons.org/licenses/
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-04 16:15:32 UTC
+Last updated 2025-03-04 16:19:01 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">
