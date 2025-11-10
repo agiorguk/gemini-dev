@@ -4554,8 +4554,11 @@ describe reference date</p></td>
 <p>Dates may be to any degree of precision, from year (YYYY) to full date
 and time. The extended date format (YYYY-MM-DD) defined in BS ISO 8601
 should be used, where YYYY is the year, MM the month and DD the day. It
-may be extended to include time (-HH:MM:SS, where HH is the hour, MM the
-minute and SS the second), with 'T' separating the two parts.</p>
+may be extended to include time (HH:MM:SS.ss, where HH is the hour, MM the
+minute, SS the second, and ss is one or more digits representing a fraction of a second), with 'T' separating the two parts.</p>
+</li>
+<li>
+<p>Timezones may be appended, in any form defined in BS ISO 8601, such as Z to designate UTC or a +/- offset like +01:00.</p>
 </li>
 <li>
 <p>Identify whether date refers to creation, last revision or
@@ -4585,11 +4588,11 @@ should be reported for spatial datasets</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><ul><li><span class="primary">2001, publication</span></li><li><span class="primary">2005-05, publication</span></li><li><span class="primary">1997-10-01, publication</span></li><li><span class="primary">2009-05-02T09:10:01, publication</span></li></ul></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><ul><li><span class="primary">2001, precise to the calendar year</span></li><li><span class="primary">2005-05, precise to the calendar month</span></li><li><span class="primary">1997-10-01, precide to the calendar date</span></li><li><span class="primary">2009-05-02T09:10:01, precise to the time in minutes</span></li><li><span class="primary">2022-10-27T13:00:15.25, precise to the time in fractions of a second</span></li><li><span class="primary">2022-10-27T13:00Z, precise to the time in minutes, in UTC</span></li><li><span class="primary">2022-10-27T14:00+02:00, precise to the time in minutes 2 hours ahead of UTC</span></li></ul></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">March 2019</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">November 2025</p></td>
 </tr>
 </tbody>
 </table>
@@ -10792,7 +10795,7 @@ This work is licensed under a&#160;<a href="http://creativecommons.org/licenses/
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-11-10 11:03:24 UTC
+Last updated 2025-11-10 11:45:23 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">
