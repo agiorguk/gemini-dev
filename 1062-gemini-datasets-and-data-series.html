@@ -3696,8 +3696,10 @@ Keyword allows more appropriate terms to describe the resource.</p></td>
 <p>Keyword value (mandatory)</p>
 </li>
 <li>
-<p>Originating controlled vocabulary (conditional - if keywords originate
-from a controlled vocabulary)</p>
+<p>Keyword type</p>
+</li>
+<li>
+<p>Originating controlled vocabulary (conditional - if keywords originate from a controlled vocabulary)</p>
 </li>
 </ol>
 </div>
@@ -3706,14 +3708,16 @@ from a controlled vocabulary)</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 34%;">
-<col style="width: 33%;">
-<col style="width: 33%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top"></th>
 <th class="tableblock halign-left valign-top">Keyword value</th>
+<th class="tableblock halign-left valign-top">Keyword type</th>
 <th class="tableblock halign-left valign-top">Originating controlled vocabulary</th>
 </tr>
 </thead>
@@ -3721,34 +3725,38 @@ from a controlled vocabulary)</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">topic of the content of the resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifies and groups keywords with a particular purpose</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">name of the
-formally registered thesaurus or a similar authoritative source of
-keywords</p></td>
+formally registered thesaurus or a similar authoritative source of keywords</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">conditional - required if keywords originate
-from a controlled vocabulary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">conditional - required if keywords originate from a controlled vocabulary</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">multiple</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code list</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Class CI_Citation (from ISO19115)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TC 211 Keyword type code</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Other Comments</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Available at  <a href="https://def.isotc211.org/common/KeywordTypeCode" class="bare">https://def.isotc211.org/common/KeywordTypeCode</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">a default value will generally be assigned for this</p></td>
 </tr>
 </tbody>
@@ -3793,13 +3801,19 @@ communities may need to create their own lists of subject areas.</p>
 <p>Multiple keywords may be stored in an individual metadata record, and
 these may come from more than one originating controlled vocabulary.</p>
 </li>
+<li>
+<p>Keyword type is used to identify the purpose of the keyword and group keywords with a similar purpose</p>
+</li>
+<li>
+<p>Keyword type takes a value from <a href="https://def.isotc211.org/common/KeywordTypeCode" class="bare">https://def.isotc211.org/common/KeywordTypeCode</a></p>
+</li>
 </ol>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">This element is similar to Topic Category, but allows a
-broader range of values.</p></td>
+broader range of values. Avoid keywords of type 'place'; use #15 Extent instead</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
@@ -3808,7 +3822,7 @@ broader range of values.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">December 2025</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">March 2026</p></td>
 </tr>
 </tbody>
 </table>
@@ -3861,6 +3875,9 @@ broader range of values.</p></td>
 </li>
 <li>
 <p>GEMINI 2.3 December 2025: "data resource" &#8594; "resource"</p>
+</li>
+<li>
+<p>GEMINI 2.3 March 2026: add sub element Keyword type</p>
 </li>
 </ol>
 </div>
@@ -3925,6 +3942,9 @@ use gco:CharacterString for terms from controlled vocabularies</p>
 controlled vocabulary. An example from the Marine Geospatial community
 is <a href="http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02" class="bare">http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02</a></p>
 </li>
+<li>
+<p>Keyword type is only populated in Example 2</p>
+</li>
 </ol>
 </div></div></td>
 </tr>
@@ -3973,6 +3993,11 @@ is <a href="http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02" clas
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmx:Anchor</span><span class="tok-w"> </span><span class="tok-na">xlink:href=</span><span class="tok-s">&#39;http://inspire.ec.europa.eu/theme/mf&#39;</span><span class="tok-nt">&gt;</span>Meteorological<span class="tok-w"> </span>geographical<span class="tok-w"> </span>features<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:type&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_KeywordTypeCode</span><span class="tok-w"> </span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://def.isotc211.org/common/KeywordTypeCode&quot;</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;theme&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;gmx:Anchor</span><span class="tok-w"> </span><span class="tok-na">xlink:href=</span><span class="tok-s">&quot;https://def.isotc211.org/common/KeywordTypeCode/theme&quot;</span><span class="tok-w"> </span><span class="tok-na">xlink:title=</span><span class="tok-s">&quot;theme&quot;</span><span class="tok-nt">&gt;</span>theme<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:MD_KeywordTypeCode&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:type&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:thesaurusName&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:title&gt;</span>
@@ -10829,7 +10854,7 @@ This work is licensed under a&#160;<a href="http://creativecommons.org/licenses/
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-02-19 10:41:36 UTC
+Last updated 2026-03-12 09:09:21 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">
