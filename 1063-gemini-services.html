@@ -8084,13 +8084,11 @@ above is being given to roughly the nearest molecule.</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The specific data to which the data quality information
-applies</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The specific data to which the data quality information applies</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To enable data quality to be reported on a subset
-of the resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To enable data quality to be reported on a subset of the resource</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
@@ -8110,14 +8108,14 @@ of the resource</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required in the ISO 19115 encoding of GEMINI 2 metadata records, to assist in managing related metadata records.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -8145,20 +8143,19 @@ of the resource</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">metadata/2.0/req/sds/only-one-dq-element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE only allows a maximum of one Data quality element, so only one scope -
+the whole resource</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE
-only allows a maximum of one Data quality element, so only one scope -
-the whole resource</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DQ_DataQuality.scope</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
 </table>
@@ -8238,8 +8235,18 @@ metadata), as shown below.</span></li></ul></div></td>
 <details>
 <summary class="title">Metadata errors observed&#8230;&#8203;</summary>
 <div class="content">
-<div class="paragraph">
-<p>|Errors observed |<strong>No level description</strong><br>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Errors observed</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>No level description</strong><br>
 ISO 19115 requires that a 'level description' is given for any quality
 statement that is not describing the 'dataset' or 'series' level.
 INSPIRE and GEMINI use the quality statement for both lineage and
@@ -8247,7 +8254,10 @@ conformity. This means that any 'service' record must provide a
 gmd:DQ_Scope/gmd:levelDescription element, as shown above.<br>
 A similar rule applies to <a href="#47">hierarchyLevelName</a>, which must be
 provided for any record that is not describing a dataset.</p>
-</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 </details>
 <div class="paragraph">
@@ -8262,7 +8272,7 @@ This work is licensed under a&#160;<a href="http://creativecommons.org/licenses/
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-03-12 09:12:21 UTC
+Last updated 2026-05-11 08:17:48 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">
